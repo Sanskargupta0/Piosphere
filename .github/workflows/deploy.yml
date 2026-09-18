@@ -45,6 +45,12 @@ jobs:
         env:
           PAGES_BASE: 'true'
 
+      # GitHub Pages has no SPA fallback, so deep links like /Piosphere/docs
+      # would 404. Serving the app shell as 404.html lets the router pick up
+      # the path client-side and render the right route.
+      - name: SPA fallback page
+        run: cp dist/index.html dist/404.html
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
