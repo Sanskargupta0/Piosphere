@@ -574,18 +574,18 @@
     "description": "The API reference on /docs is embedded directly into the PioSphere frontend - no separate docs site, no iframe. This page walks through the layers, the data flow, and the tools behind it.",
     "layers": {
       "label": "Layers",
-      "title": "One app, four layers",
+      "title": "Two repos, four layers",
       "description": "Each layer has a single job and talks only to its neighbors.",
       "items": [
         {
           "mark": "01",
-          "title": "PioAgent service",
-          "body": "The FastAPI backend defines the customer-facing API. Its OpenAPI schema is generated from the code itself, so the spec can never drift from the implementation."
+          "title": "api-service repo",
+          "body": "A separate FastAPI repository defines the customer-facing API. Its OpenAPI schema is generated from the code itself, so the spec can never drift from the implementation."
         },
         {
           "mark": "02",
           "title": "GitHub Actions sync",
-          "body": "A workflow exports the OpenAPI document from the service and commits it into this repository as docs/openapi.json. The spec travels through git like any other artifact - reviewable, versioned, revertible."
+          "body": "A workflow in the service repo exports the filtered OpenAPI document and opens a pull request against this repository updating docs/openapi.json. The spec travels through git like any other artifact - reviewable, versioned, revertible."
         },
         {
           "mark": "03",
@@ -606,19 +606,19 @@
       "steps": [
         {
           "title": "Route defined",
-          "body": "An endpoint is added or changed in the PioAgent service."
+          "body": "An endpoint is added or changed in the api-service repository."
         },
         {
           "title": "Spec generated",
-          "body": "FastAPI emits the updated OpenAPI document."
+          "body": "FastAPI emits the updated OpenAPI document, filtered to customer endpoints."
         },
         {
-          "title": "Action syncs",
-          "body": "GitHub Actions commits docs/openapi.json into the frontend repo."
+          "title": "PR opened",
+          "body": "GitHub Actions opens a pull request here updating docs/openapi.json."
         },
         {
-          "title": "Bundle rebuilt",
-          "body": "Vite inlines the new spec into the next build of the site."
+          "title": "Merge deploys",
+          "body": "Merging the PR triggers the deploy workflow; Vite inlines the new spec into the build."
         },
         {
           "title": "Docs live",
@@ -629,7 +629,7 @@
     "tools": {
       "label": "Tools",
       "title": "What it is built with",
-      "description": "Everything below runs in the frontend repository you are looking at.",
+      "description": "The frontend stack below runs in this repository; the API contract lives in api-service.",
       "items": [
         {
           "name": "React 19",
@@ -669,12 +669,12 @@
         {
           "name": "FastAPI",
           "role": "Spec source",
-          "body": "The PioAgent backend whose generated OpenAPI schema feeds the reference."
+          "body": "The api-service backend whose generated OpenAPI schema feeds the reference."
         },
         {
           "name": "GitHub Actions",
-          "role": "Spec sync",
-          "body": "Automates the path from service code to docs/openapi.json in this repo."
+          "role": "Spec sync + deploy",
+          "body": "Carries a spec change from the service repo to a PR here, then deploys on merge."
         }
       ]
     }
