@@ -56,6 +56,12 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
+      # The generated file must land at docs/openapi.json — that is what
+      # the frontend imports and what the PR is meant to update.
+      - name: Stage the new spec
+        if: steps.diff.outputs.changed == 'true'
+        run: cp service/customer-openapi.json docs/openapi.json
+
       - name: Create pull request
         if: steps.diff.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6
