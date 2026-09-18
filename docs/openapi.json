@@ -111,6 +111,61 @@
         ]
       }
     },
+    "/api/v1/users/{user_id}/tasks": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Get a user's tasks",
+        "description": "List all tasks assigned to a specific user. Returns 404 if no user with the given ID exists in the workspace.",
+        "operationId": "listUserTasks",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "User Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Task"
+                  },
+                  "title": "Response Listusertasks"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No user with this ID exists."
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ]
+      }
+    },
     "/api/v1/tasks": {
       "get": {
         "tags": [
