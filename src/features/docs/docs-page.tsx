@@ -3,12 +3,17 @@ import { useTranslation } from 'react-i18next'
 import { ApiReferenceReact } from '@scalar/api-reference-react'
 import '@scalar/api-reference-react/style.css'
 import { useTheme } from '@/context/theme-provider'
-// Spec is synced into docs/ by GitHub Actions from the PioAgent service.
-import openApiSpec from '../../../docs/openapi.json'
+import { getSpec } from './spec-registry'
 
-export function DocsPage() {
+interface DocsPageProps {
+  /** Service id from the spec registry (?service= param). */
+  serviceId?: string
+}
+
+export function DocsPage({ serviceId }: DocsPageProps) {
   const { t } = useTranslation('common')
   const { resolvedTheme } = useTheme()
+  const entry = getSpec(serviceId)
 
   // Scalar's internal color-mode hook reads localStorage("colorMode") with
   // priority over the darkMode config option, and applies its own
@@ -30,7 +35,7 @@ export function DocsPage() {
   const configuration = useMemo(
     () => ({
       darkMode: resolvedTheme === 'dark',
-      content: openApiSpec,
+      content: entry.spec,
       theme: 'fastify' as const,
       layout: 'modern' as const,
       showSidebar: true,
@@ -64,12 +69,12 @@ export function DocsPage() {
       modelsSectionLabel: 'Models',
       _integration: 'react' as const,
     }),
-    [resolvedTheme],
+    [resolvedTheme, entry.spec],
   )
 
   return (
-    <div className='docs-page mx-auto w-full max-w-8xl px-4 pb-24 pt-28 sm:px-6 lg:px-8'>
-      <h1 className='sr-only'>{t('docs.title')}</h1>
+    <div className='docs-page mx-auto w-full max-w-7xl px-6 pb-24 pt-8 md:px-8 lg:px-12'>
+      <h1 className='sr-only'>{`${entry.name} — ${t('docs.title')}`}</h1>
       <ApiReferenceReact configuration={configuration} />
       {/* Scalar's sidebar footer has no config option to hide its
           "Powered by Scalar" link (it's a slot default), so hide it here. */}

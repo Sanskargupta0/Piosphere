@@ -1,6 +1,3 @@
----
-title: Quick Start
----
 
 # Quick Start
 
@@ -40,5 +37,5 @@ curl https://api.pioagent.app/api/v1/users/usr_001 \
 
 ## Next steps
 
-- Read the full [Users API](/docs/api/users) and [Tasks API](/docs/api/tasks) reference.
-- Follow the [Creating a task](/docs/guides/creating-a-task) guide.
+- Read the full [API reference](/docs/api).
+- Learn how [authentication](/docs/authentication) works.

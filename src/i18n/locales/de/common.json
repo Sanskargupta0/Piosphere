@@ -95,6 +95,12 @@
   },
   "docs": {
     "title": "API-Dokumentation",
-    "toggleSidebar": "Seitenleiste ein-/ausblenden"
+    "toggleSidebar": "Seitenleiste ein-/ausblenden",
+    "nav": {
+      "introduction": "Einführung",
+      "quickstart": "Schnellstart",
+      "authentication": "Authentifizierung",
+      "apiReference": "API-Referenz"
+    }
   }
 }

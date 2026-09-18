@@ -92,6 +92,12 @@
   },
   "docs": {
     "title": "API Documentation",
-    "toggleSidebar": "Toggle sidebar"
+    "toggleSidebar": "Toggle sidebar",
+    "nav": {
+      "introduction": "Introduction",
+      "quickstart": "Quick Start",
+      "authentication": "Authentication",
+      "apiReference": "API Reference"
+    }
   }
 }

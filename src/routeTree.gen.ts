@@ -14,6 +14,11 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ArchitectureRouteImport } from './routes/architecture'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as DocsIndexRouteImport } from './routes/docs/index'
+import { Route as DocsQuickstartRouteImport } from './routes/docs/quickstart'
+import { Route as DocsIntroductionRouteImport } from './routes/docs/introduction'
+import { Route as DocsAuthenticationRouteImport } from './routes/docs/authentication'
+import { Route as DocsApiRouteImport } from './routes/docs/api'
 
 const DocsRoute = DocsRouteImport.update({
   id: '/docs',
@@ -40,20 +45,54 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DocsIndexRoute = DocsIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => DocsRoute,
+} as any)
+const DocsQuickstartRoute = DocsQuickstartRouteImport.update({
+  id: '/quickstart',
+  path: '/quickstart',
+  getParentRoute: () => DocsRoute,
+} as any)
+const DocsIntroductionRoute = DocsIntroductionRouteImport.update({
+  id: '/introduction',
+  path: '/introduction',
+  getParentRoute: () => DocsRoute,
+} as any)
+const DocsAuthenticationRoute = DocsAuthenticationRouteImport.update({
+  id: '/authentication',
+  path: '/authentication',
+  getParentRoute: () => DocsRoute,
+} as any)
+const DocsApiRoute = DocsApiRouteImport.update({
+  id: '/api',
+  path: '/api',
+  getParentRoute: () => DocsRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/architecture': typeof ArchitectureRoute
   '/contact': typeof ContactRoute
-  '/docs': typeof DocsRoute
+  '/docs': typeof DocsRouteWithChildren
+  '/docs/api': typeof DocsApiRoute
+  '/docs/authentication': typeof DocsAuthenticationRoute
+  '/docs/introduction': typeof DocsIntroductionRoute
+  '/docs/quickstart': typeof DocsQuickstartRoute
+  '/docs/': typeof DocsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/architecture': typeof ArchitectureRoute
   '/contact': typeof ContactRoute
-  '/docs': typeof DocsRoute
+  '/docs/api': typeof DocsApiRoute
+  '/docs/authentication': typeof DocsAuthenticationRoute
+  '/docs/introduction': typeof DocsIntroductionRoute
+  '/docs/quickstart': typeof DocsQuickstartRoute
+  '/docs': typeof DocsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -61,14 +100,49 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/architecture': typeof ArchitectureRoute
   '/contact': typeof ContactRoute
-  '/docs': typeof DocsRoute
+  '/docs': typeof DocsRouteWithChildren
+  '/docs/api': typeof DocsApiRoute
+  '/docs/authentication': typeof DocsAuthenticationRoute
+  '/docs/introduction': typeof DocsIntroductionRoute
+  '/docs/quickstart': typeof DocsQuickstartRoute
+  '/docs/': typeof DocsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/architecture' | '/contact' | '/docs'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/architecture'
+    | '/contact'
+    | '/docs'
+    | '/docs/api'
+    | '/docs/authentication'
+    | '/docs/introduction'
+    | '/docs/quickstart'
+    | '/docs/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/architecture' | '/contact' | '/docs'
-  id: '__root__' | '/' | '/about' | '/architecture' | '/contact' | '/docs'
+  to:
+    | '/'
+    | '/about'
+    | '/architecture'
+    | '/contact'
+    | '/docs/api'
+    | '/docs/authentication'
+    | '/docs/introduction'
+    | '/docs/quickstart'
+    | '/docs'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/architecture'
+    | '/contact'
+    | '/docs'
+    | '/docs/api'
+    | '/docs/authentication'
+    | '/docs/introduction'
+    | '/docs/quickstart'
+    | '/docs/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -76,7 +150,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ArchitectureRoute: typeof ArchitectureRoute
   ContactRoute: typeof ContactRoute
-  DocsRoute: typeof DocsRoute
+  DocsRoute: typeof DocsRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -116,15 +190,68 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/docs/': {
+      id: '/docs/'
+      path: '/'
+      fullPath: '/docs/'
+      preLoaderRoute: typeof DocsIndexRouteImport
+      parentRoute: typeof DocsRoute
+    }
+    '/docs/quickstart': {
+      id: '/docs/quickstart'
+      path: '/quickstart'
+      fullPath: '/docs/quickstart'
+      preLoaderRoute: typeof DocsQuickstartRouteImport
+      parentRoute: typeof DocsRoute
+    }
+    '/docs/introduction': {
+      id: '/docs/introduction'
+      path: '/introduction'
+      fullPath: '/docs/introduction'
+      preLoaderRoute: typeof DocsIntroductionRouteImport
+      parentRoute: typeof DocsRoute
+    }
+    '/docs/authentication': {
+      id: '/docs/authentication'
+      path: '/authentication'
+      fullPath: '/docs/authentication'
+      preLoaderRoute: typeof DocsAuthenticationRouteImport
+      parentRoute: typeof DocsRoute
+    }
+    '/docs/api': {
+      id: '/docs/api'
+      path: '/api'
+      fullPath: '/docs/api'
+      preLoaderRoute: typeof DocsApiRouteImport
+      parentRoute: typeof DocsRoute
+    }
   }
 }
+
+interface DocsRouteChildren {
+  DocsApiRoute: typeof DocsApiRoute
+  DocsAuthenticationRoute: typeof DocsAuthenticationRoute
+  DocsIntroductionRoute: typeof DocsIntroductionRoute
+  DocsQuickstartRoute: typeof DocsQuickstartRoute
+  DocsIndexRoute: typeof DocsIndexRoute
+}
+
+const DocsRouteChildren: DocsRouteChildren = {
+  DocsApiRoute: DocsApiRoute,
+  DocsAuthenticationRoute: DocsAuthenticationRoute,
+  DocsIntroductionRoute: DocsIntroductionRoute,
+  DocsQuickstartRoute: DocsQuickstartRoute,
+  DocsIndexRoute: DocsIndexRoute,
+}
+
+const DocsRouteWithChildren = DocsRoute._addFileChildren(DocsRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ArchitectureRoute: ArchitectureRoute,
   ContactRoute: ContactRoute,
-  DocsRoute: DocsRoute,
+  DocsRoute: DocsRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

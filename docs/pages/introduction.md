@@ -1,6 +1,3 @@
----
-title: Introduction
----
 
 # PioAgent Documentation
 
@@ -24,4 +21,4 @@ you read here always matches the deployed API.
 
 - [Authentication](/docs/authentication) — how to authenticate API requests.
 - [Quick Start](/docs/quickstart) — make your first request in two minutes.
-- [Users API](/docs/api/users) — full endpoint reference.
+- [API Reference](/docs/api) — full endpoint reference.
