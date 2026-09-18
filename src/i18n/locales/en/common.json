@@ -1,0 +1,97 @@
+{
+  "config": {
+    "title": "Theme Settings",
+    "description": "Adjust the appearance and layout to suit your preferences.",
+    "reset": "Reset",
+    "openSettings": "Open theme settings",
+    "theme": {
+      "title": "Theme",
+      "system": "System",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "sidebar": {
+      "title": "Sidebar",
+      "inset": "Inset",
+      "floating": "Floating",
+      "sidebar": "Sidebar"
+    },
+    "layout": {
+      "title": "Layout",
+      "default": "Default",
+      "compact": "Compact",
+      "full": "Full layout"
+    },
+    "direction": {
+      "title": "Direction",
+      "ltr": "Left to Right",
+      "rtl": "Right to Left"
+    },
+    "language": {
+      "title": "Language",
+      "english": "English",
+      "german": "Deutsch"
+    }
+  },
+  "comingSoon": {
+    "title": "Coming Soon!",
+    "description": "This page has not been created yet. Stay tuned though!"
+  },
+  "confirmDialog": {
+    "cancel": "Cancel",
+    "continue": "Continue"
+  },
+  "confirmDelete": {
+    "typeToConfirm": "Type {{name}} to confirm",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "deleting": "Deleting..."
+  },
+  "signOut": {
+    "title": "Sign out",
+    "description": "Are you sure you want to sign out? You will need to sign in again to access your account.",
+    "confirm": "Sign out"
+  },
+  "themeSwitch": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "search": {
+    "placeholder": "Search"
+  },
+  "profile": {
+    "account": "Account",
+    "settings": "Settings",
+    "signOut": "Sign out"
+  },
+  "navUser": {
+    "account": "Account",
+    "notifications": "Notifications",
+    "signOut": "Sign out"
+  },
+  "commandMenu": {
+    "placeholder": "Type a command or search...",
+    "noResults": "No results found.",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "dataTable": {
+    "view": "View",
+    "toggleColumns": "Toggle columns",
+    "rowsPerPage": "Rows per page",
+    "pageOf": "Page {{page}} of {{totalPages}}",
+    "goToFirstPage": "Go to first page",
+    "goToPreviousPage": "Go to previous page",
+    "goToNextPage": "Go to next page",
+    "goToLastPage": "Go to last page",
+    "goToPage": "Go to page {{page}}"
+  },
+  "docs": {
+    "title": "API Documentation",
+    "toggleSidebar": "Toggle sidebar"
+  }
+}

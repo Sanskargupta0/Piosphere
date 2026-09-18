@@ -1,0 +1,58 @@
+---
+title: Getting users
+---
+
+# Getting users
+
+This guide covers the common patterns for retrieving user data from the
+PioAgent Users API.
+
+## List all users
+
+```bash
+curl https://api.pioagent.app/api/v1/users \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
+
+The response is a JSON array of user objects:
+
+```json
+[
+  {
+    "id": "usr_001",
+    "email": "ada@example.com",
+    "name": "Ada Lovelace",
+    "is_active": true
+  },
+  {
+    "id": "usr_002",
+    "email": "grace@example.com",
+    "name": "Grace Hopper",
+    "is_active": false
+  }
+]
+```
+
+## Get a single user
+
+When you already know the user's `id`, fetch it directly:
+
+```bash
+curl https://api.pioagent.app/api/v1/users/usr_001 \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
+
+A missing user returns a `404`:
+
+```json
+{
+  "detail": "User not found"
+}
+```
+
+## Tips
+
+- Cache user lookups where possible — the list endpoint is rate limited.
+- Use the `id` field (not email) as your stable identifier; emails can change.
+
+See the full [Users API reference](/docs/api/users) for request and response schemas.

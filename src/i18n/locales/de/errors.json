@@ -1,0 +1,31 @@
+{
+  "_meta": { "reviewStatus": "ai-draft-unreviewed" },
+  "validation": {
+    "required": "Dieses Feld ist erforderlich.",
+    "tooLong": "Darf höchstens {{max}} Zeichen lang sein.",
+    "tooShort": "Muss mindestens {{min}} Zeichen lang sein."
+  },
+  "goBack": "Zurück",
+  "backToHome": "Zur Startseite",
+  "learnMore": "Mehr erfahren",
+  "notFound": {
+    "title": "Hoppla! Seite nicht gefunden!",
+    "description": "Die gesuchte Seite scheint nicht zu existieren oder wurde möglicherweise entfernt."
+  },
+  "forbidden": {
+    "title": "Zugriff verweigert",
+    "description": "Sie haben nicht die erforderliche Berechtigung, um diese Ressource anzuzeigen."
+  },
+  "unauthorized": {
+    "title": "Nicht autorisierter Zugriff",
+    "description": "Bitte melden Sie sich mit den entsprechenden Anmeldedaten an, um auf diese Ressource zuzugreifen."
+  },
+  "maintenance": {
+    "title": "Die Website wird gewartet!",
+    "description": "Die Website ist derzeit nicht verfügbar. Wir sind in Kürze wieder online."
+  },
+  "general": {
+    "title": "Hoppla! Etwas ist schiefgelaufen :')",
+    "description": "Wir entschuldigen uns für die Unannehmlichkeiten. Bitte versuchen Sie es später erneut."
+  }
+}

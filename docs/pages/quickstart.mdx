@@ -1,0 +1,44 @@
+---
+title: Quick Start
+---
+
+# Quick Start
+
+Make your first PioAgent API call in under two minutes.
+
+## 1. Get an API key
+
+Sign in to the PioAgent dashboard and create an API key under
+**Settings → API Keys**.
+
+## 2. List users
+
+```bash
+curl https://api.pioagent.app/api/v1/users \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
+
+You should get back a list of users in your workspace:
+
+```json
+[
+  {
+    "id": "usr_001",
+    "email": "ada@example.com",
+    "name": "Ada Lovelace",
+    "is_active": true
+  }
+]
+```
+
+## 3. Look up a single user
+
+```bash
+curl https://api.pioagent.app/api/v1/users/usr_001 \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
+
+## Next steps
+
+- Read the full [Users API](/docs/api/users) and [Tasks API](/docs/api/tasks) reference.
+- Follow the [Creating a task](/docs/guides/creating-a-task) guide.

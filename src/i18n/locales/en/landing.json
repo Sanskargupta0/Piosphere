@@ -1,0 +1,682 @@
+{
+  "header": {
+    "products": "Products",
+    "howItWorks": "How It Works",
+    "infrastructure": "Infrastructure",
+    "about": "About",
+    "contact": "Contact Us",
+    "architecture": "Architecture",
+    "demoPrompt": "Need a live walkthrough?",
+    "demoLink": "Schedule a free demo →",
+    "login": "Login",
+    "getStarted": "Get Started",
+    "aboutPiovation": "About Piovation",
+    "products_menu": {
+      "pioagent": "PioAgent",
+      "pioagentDesc": "Multi-agent orchestration with RAG-powered knowledge and 200+ AI model support",
+      "pioagentBadge": "Automation",
+      "piocall": "PioCall",
+      "piocallDesc": "Production-ready voice AI. Sub-500ms latency, 40+ languages, SIP-ready.",
+      "piocallBadge": "Voice AI",
+      "piosphere": "PioSphere",
+      "piosphereDesc": "Cloud OS for any GPU. Deploy in minutes. 100% data sovereignty.",
+      "piosphereBadge": "Cloud OS",
+      "analytics": "Analytics",
+      "analyticsDesc": "Real-time dashboards across all AI workloads and infrastructure usage.",
+      "security": "Security & Compliance",
+      "securityDesc": "SOC2 compliant. RBAC, audit logs, multi-tenant isolation.",
+      "integrations": "Integrations",
+      "integrationsDesc": "Salesforce, SAP, Microsoft 365, REST API, Kubernetes-native."
+    },
+    "docs": "Documentation"
+  },
+  "hero": {
+    "badge": "Complete AI Platform",
+    "headlineWords": [
+      "Build",
+      "Deploy",
+      "Scale"
+    ],
+    "headlineMain": "AI Agents",
+    "headlineSuffix": "On-Prem & Airgapped.",
+    "description": "Intelligent automation and voice AI powered by our cloud OS. Deploy on your own GPUs, in an air-gapped network, with complete data sovereignty.",
+    "scheduleDemo": "Schedule Demo",
+    "solutionBrief": "Solution Brief",
+    "trustedBy": "Trusted by",
+    "trustedIndustries": "industry leaders"
+  },
+  "features": {
+    "sectionLabel": "Why PioSphere",
+    "headline": "Built to run AI",
+    "headlineSuffix": "reliably at scale.",
+    "description": "Piovation helps teams turn AI experiments into reliable production systems that scale with real-world demand, complexity, and evolving business needs.",
+    "cta": "Features",
+    "pioagentTitle": "PioAgent",
+    "pioagentDesc": "Orchestrate autonomous AI agents that automate multi-step workflows and execute complex tasks on-premise, even in fully air-gapped environments.",
+    "piocallTitle": "PioCall",
+    "piocallDesc": "Production-ready voice agents with ultra-low latency, natural conversations, and real-time call analytics.",
+    "piosphereTitle": "PioSphere",
+    "piosphereDesc": "Enterprise cloud OS for AI infrastructure - deploy, monitor, and scale GPU workloads with complete data sovereignty.",
+    "sovereigntyPercentage": "100%",
+    "sovereigntyTitle": "Data Sovereignty",
+    "sovereigntyDesc": "Enterprise cloud OS. Your data never leaves your infrastructure.",
+    "securityTitle": "Enterprise Security",
+    "securityDesc": "SOC2 compliant with complete data sovereignty. Built-in access control and audit logs.",
+    "securityHighlightWords": [
+      "SOC2",
+      "compliant",
+      "sovereignty",
+      "access",
+      "control",
+      "audit",
+      "logs"
+    ],
+    "multitenantTitle": "Multi-tenant Architecture",
+    "multitenantDesc": "Unified monitoring across all deployments with quota management and GPU sharing.",
+    "multitenantLabelAnalytics": "Analytics",
+    "multitenantLabelAgents": "Agents",
+    "multitenantLabelScale": "Scale",
+    "onpremTitle": "On-Prem & Airgapped Deployment",
+    "onpremDesc": "Deploy on any GPU infrastructure, including fully air-gapped clusters with zero outbound network access. 60-80% cheaper than AWS, Azure, or GCP."
+  },
+  "bucket": {
+    "headline": "Enterprise-grade by default.",
+    "description": "Every feature is production-hardened, accessible, and built for the demands of real-world AI infrastructure.",
+    "chips": {
+      "onprem": "On-Prem & Airgapped",
+      "onpremDesc": "100% data sovereignty, no outbound traffic",
+      "latency": "Ultra-Low Latency",
+      "latencyDesc": "Sub-200ms voice & agent responses",
+      "multitenant": "Multi-Tenant",
+      "multitenantDesc": "Isolated workloads, shared GPUs",
+      "aiNative": "AI-Native Platform",
+      "aiNativeDesc": "Built for agents from day one"
+    }
+  },
+  "stats": {
+    "headlinePart1": "Built on",
+    "headlinePart2": "Performance",
+    "headlinePart3": "Proven by Data",
+    "description": "PioSphere delivers enterprise AI infrastructure that outperforms cloud providers on cost, latency, and reliability - all on your own hardware.",
+    "uptimeValue": "99.99%",
+    "uptimeLabel": "Platform Uptime",
+    "costSavingsValue": "80%",
+    "costSavingsLabel": "Cost Savings vs Cloud",
+    "latencyValue": "<200ms",
+    "latencyLabel": "Agent Response Time"
+  },
+  "integrations": {
+    "connectorsCount": "50+ Connectors",
+    "rotatingTexts": [
+      "One Platform",
+      "Infinite Scale",
+      "Zero Hassle",
+      "Endless Possibilities"
+    ],
+    "description": "Connect PioAgent to the tools your team already uses - from Slack and Gmail to Salesforce and Stripe. Automate workflows across CRM, support, scheduling, and more.",
+    "cta": "Explore"
+  },
+  "globe": {
+    "titlePart1": "Deploy AI Agents",
+    "titlePart2": "Globally",
+    "description": "Orchestrate intelligent agents across any region with enterprise-grade security, real-time monitoring, and auto-scaling infrastructure – all from a single control plane.",
+    "cta": "Start Deploying"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about PioSphere",
+    "items": [
+      {
+        "question": "How do I get started with PioSphere?",
+        "answer": "Schedule a demo and our team will guide you through deployment on your own GPU infrastructure. Most teams are up and running within days, not months."
+      },
+      {
+        "question": "Does PioSphere really run fully air-gapped?",
+        "answer": "Yes. PioSphere is designed for on-prem and air-gapped environments with zero outbound network access. Your data never leaves your infrastructure."
+      },
+      {
+        "question": "Which AI models are supported?",
+        "answer": "PioAgent supports 200+ AI models out of the box, including open-weight models you can host entirely on your own GPUs."
+      },
+      {
+        "question": "How does PioSphere compare to AWS, Azure, or GCP?",
+        "answer": "Running on your own hardware with PioSphere typically saves 60-80% compared to cloud providers, while giving you full data sovereignty and control."
+      },
+      {
+        "question": "Is PioSphere enterprise-ready?",
+        "answer": "Yes. PioSphere is SOC2 compliant with role-based access control, audit logs, multi-tenant isolation, and 99.99% platform uptime."
+      }
+    ]
+  },
+  "footer": {
+    "marqueeItems": [
+      "On-Prem & Airgapped",
+      "100% Data Sovereignty",
+      "Ultra-Low Latency",
+      "AI-Native Platform",
+      "Multi-Tenant"
+    ],
+    "headline": "Ready to scale AI?",
+    "contactSales": "Contact Sales",
+    "documentation": "Read Documentation",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© {{year}} PioSphere. All rights reserved.",
+    "craftedWith": "Crafted with",
+    "by": "by",
+    "company": "Piovation",
+    "backToTop": "Back to top"
+  },
+  "legal": {
+    "backToSite": "Back to site",
+    "germanPrevails": "The German version of this document is the sole authoritative and legally binding version. This English text is a translation provided for convenience only. In the event of any discrepancy, the German version prevails.",
+    "meta": {
+      "version": "Version",
+      "date": "Date",
+      "provider": "Provider",
+      "providerName": "PioVation GmbH"
+    },
+    "index": {
+      "title": "On this page",
+      "label": "Section index"
+    },
+    "matrix": {
+      "area": "Area",
+      "hosted": "PioVation-hosted",
+      "privateCloud": "Private Cloud",
+      "onPremise": "On-Premise",
+      "rows": [
+        {
+          "area": "Platform software",
+          "hosted": "PioVation",
+          "privateCloud": "PioVation / customer per contract",
+          "onPremise": "PioVation / customer per contract"
+        },
+        {
+          "area": "Physical infrastructure",
+          "hosted": "EMC Home of Data, Munich (DE)",
+          "privateCloud": "Customer or cloud provider",
+          "onPremise": "Customer"
+        },
+        {
+          "area": "Identity management",
+          "hosted": "PioVation, customer SSO where applicable",
+          "privateCloud": "Shared / customer",
+          "onPremise": "Customer, where integrated"
+        },
+        {
+          "area": "Backups",
+          "hosted": "Per service scope",
+          "privateCloud": "Per agreed model",
+          "onPremise": "Typically customer"
+        },
+        {
+          "area": "Network and perimeter protection",
+          "hosted": "PioVation / provider",
+          "privateCloud": "Shared",
+          "onPremise": "Customer"
+        },
+        {
+          "area": "Patching of PioVation software",
+          "hosted": "PioVation",
+          "privateCloud": "Per operating model",
+          "onPremise": "Per maintenance or operating model"
+        },
+        {
+          "area": "Customer data and authorisations",
+          "hosted": "Customer defines purposes and roles; PioVation operates technical controls",
+          "privateCloud": "Shared responsibility allocation",
+          "onPremise": "Predominantly customer"
+        }
+      ]
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "How PioVation processes and protects personal data across its platform, services, and agreed customer deployments.",
+    "version": "1.0",
+    "date": "21 August 2026",
+    "sections": {
+      "controller": {
+        "title": "Controller and contact",
+        "intro": "PioVation GmbH, Zehentmeierstraße 8a, 85630 Grasbrunn, Germany, registered at Amtsgericht München HRB 290989, VAT ID DE367131891, represented by its Managing Director Mazda Sabony, is the controller for the processing described in this policy.",
+        "items": [
+          "Data protection contact: datenschutz@piovation.com.",
+          "This policy describes the technical and organisational measures pursuant to Article 32 GDPR that ensure a level of security appropriate to the risk when processing personal data.",
+          "It supplements, and does not replace, the applicable data processing agreement and the confidentiality and data protection undertaking of persons authorised to process data."
+        ]
+      },
+      "scope": {
+        "title": "Scope",
+        "body": "This policy applies to PioVation corporate systems, the platform and services, and agreed customer deployments. The specific applicability of individual measures depends on the agreed scope of services and the deployment model. For on-premise or private-cloud environments operated by the customer, responsibilities between PioVation and the customer are defined separately."
+      },
+      "principles": {
+        "title": "Security principles",
+        "items": [
+          "Need-to-know and least-privilege principle for access to systems and customer data.",
+          "Security by design and privacy by design in the development and operation of the platform.",
+          "Separation of production, test, and development environments, insofar as technically and organisationally required.",
+          "Risk-based selection, regular review, and continuous improvement of the security measures.",
+          "Clear responsibilities for information security, data protection, and incident response."
+        ]
+      },
+      "confidentiality": {
+        "title": "Confidentiality",
+        "intro": "For the PioVation-hosted model, customer data is processed in Germany, operated in the EMC Home of Data data centre in Munich. The site is certified to ISO 27001, ISO 9001, and ISO 50001 and is built and operated in accordance with DIN EN 50600.",
+        "items": [
+          "Physical access to PioVation's own premises is restricted to authorised persons; visitor access is controlled or accompanied in accordance with the relevant site rules.",
+          "Individual user accounts; shared administration accounts are avoided as far as possible.",
+          "Multi-factor authentication for privileged and security-critical access.",
+          "Role-based access control with authorisations assigned according to the least-privilege principle and reviewed regularly.",
+          "Logical separation of customer environments and workloads through suitable platform, network, project, or namespace isolation mechanisms.",
+          "Customer data is not made accessible to other customers."
+        ]
+      },
+      "integrity": {
+        "title": "Integrity",
+        "intro": "Transmission and storage are protected according to the deployment model and protection requirement:",
+        "items": [
+          "Encrypted transmission using state-of-the-art transport encryption (e.g. TLS).",
+          "Encryption of suitable storage media, volumes, databases, or backups depending on the deployment and protection requirement.",
+          "Access to cryptographic keys and secrets is restricted and managed in a traceable manner; secrets are not intentionally stored in source code.",
+          "Traceable software change processes, including version control and review procedures for security-relevant changes.",
+          "Dependencies, container images, and components are checked for known vulnerabilities on a risk basis; security updates are prioritised according to criticality.",
+          "Security-relevant administrative activities are logged insofar as technically possible and appropriate; logs are protected against unauthorised access and access to them is restricted to authorised roles."
+        ]
+      },
+      "availability": {
+        "title": "Availability and resilience",
+        "items": [
+          "Monitoring of essential platform and infrastructure components.",
+          "Suitable backup and recovery procedures in accordance with the agreed service and deployment, with regular testing of the recoverability of critical data and systems.",
+          "Redundancy and failover concepts, insofar as they are part of the agreed service level.",
+          "Documented procedures for operational disruptions, escalation, and restart.",
+          "Capacity and resource monitoring for critical infrastructure components."
+        ]
+      },
+      "ai": {
+        "title": "AI-specific protective measures",
+        "intro": "Because the platform processes prompts, outputs, and model artefacts, additional safeguards apply:",
+        "items": [
+          "Separation of prompts, outputs, model artefacts, and other customer data according to architecture and protection requirement.",
+          "Documented rules on whether and for what purposes inputs or outputs are stored.",
+          "No use of confidential customer content for general model training outside its purpose without a legal basis or contractual approval.",
+          "Restriction of access to model endpoints, inference APIs, model weights, and administrative functions.",
+          "Protection of API keys, tokens, and other credentials through suitable secret-management procedures.",
+          "When using external model or infrastructure providers, data flows, storage locations, and subprocessors are documented transparently."
+        ]
+      },
+      "incidents": {
+        "title": "Incident response and personal data breaches",
+        "items": [
+          "Documented process for the detection, assessment, containment, and remediation of security incidents.",
+          "Defined internal escalation paths and responsibilities, with preservation of relevant logs and evidence.",
+          "In the event of a personal data breach, an immediate internal assessment is carried out.",
+          "Insofar as PioVation acts as a processor, the controller is supported or informed without undue delay in accordance with the contractual agreement.",
+          "After relevant incidents, a root-cause analysis and appropriate corrective measures are carried out."
+        ]
+      },
+      "deletion": {
+        "title": "Deletion, return, and data minimisation",
+        "items": [
+          "Personal data is processed only to the extent necessary for the respective purpose.",
+          "Appropriate retention and deletion rules are defined for production data, logs, temporary data, and backups.",
+          "After the end of the service, customer data is returned or deleted in accordance with the contract and instructions, insofar as no statutory retention obligations preclude this.",
+          "Backup copies may be removed from rotation cycles with a time delay; during this period they remain protected against production use and unauthorised access."
+        ]
+      },
+      "subprocessors": {
+        "title": "Subprocessors and suppliers",
+        "body": "PioVation assesses, on a risk basis, service providers that are essential for the processing or protection of customer data. For subprocessors, the agreements required under data protection law are concluded. The current list of approved subprocessors is maintained separately and made accessible to customers in accordance with the data processing agreement."
+      },
+      "responsibility": {
+        "title": "Deployment models and responsibility allocation",
+        "intro": "Responsibilities differ by deployment model. The matrix below summarises the split:"
+      },
+      "rights": {
+        "title": "Your rights",
+        "intro": "Data subjects may exercise their statutory rights, including:",
+        "items": [
+          "Access, rectification, and erasure of personal data.",
+          "Restriction of processing and data portability.",
+          "Objection to processing, insofar as legally permitted.",
+          "Complaint to a supervisory authority."
+        ]
+      },
+      "contact": {
+        "title": "Contact",
+        "body": "For questions about this policy or data protection at PioVation, contact:"
+      }
+    }
+  },
+  "terms": {
+    "title": "Terms & Conditions",
+    "subtitle": "The framework for using PioVation's platform and services, including deployment models, responsibilities, and availability.",
+    "version": "1.0",
+    "date": "21 August 2026",
+    "sections": {
+      "scope": {
+        "title": "Scope",
+        "body": "These terms govern the use of PioVation's platform and services, comprising PioSphere (cloud OS for AI infrastructure), PioAgent (multi-agent orchestration), and PioCall (voice AI). They apply insofar as not superseded by individually agreed contracts, which take precedence."
+      },
+      "services": {
+        "title": "Services",
+        "intro": "PioVation provides its platform and services under the agreed scope:",
+        "items": [
+          "Provision of the platform software for deploying, monitoring, and scaling AI workloads.",
+          "Support for on-premise, private-cloud, and PioVation-hosted deployment models as agreed.",
+          "Maintenance and further development of the platform software, including security updates prioritised according to criticality.",
+          "Technical support within the agreed service levels."
+        ]
+      },
+      "deployment": {
+        "title": "Deployment models",
+        "intro": "The specific applicability of individual measures and responsibilities depends on the agreed deployment model:",
+        "items": [
+          "PioVation-hosted: customer data is processed in Germany in the EMC Home of Data data centre in Munich, certified to ISO 27001, ISO 9001, and ISO 50001 and operated in accordance with DIN EN 50600.",
+          "Private Cloud: operation in an environment agreed between PioVation and the customer, with responsibilities allocated per contract.",
+          "On-Premise: operation on customer infrastructure, with PioVation providing the platform software per the agreed maintenance or operating model."
+        ]
+      },
+      "customerObligations": {
+        "title": "Customer obligations",
+        "items": [
+          "The customer defines the purposes of processing and assigns roles within its organisation.",
+          "The customer is responsible for the use of the platform within its sphere of control, including the management of its own credentials.",
+          "For on-premise and private-cloud environments operated by the customer, the customer provides the physical infrastructure, network, and perimeter protection as agreed.",
+          "The customer must not use the platform for unlawful purposes or in a way that impairs its availability for others."
+        ]
+      },
+      "dataProtection": {
+        "title": "Data protection",
+        "intro": "Processing of personal data follows the applicable data processing agreement and the technical and organisational measures pursuant to Article 32 GDPR:",
+        "items": [
+          "Confidential customer content is not used to train general models outside its purpose without a legal basis or contractual approval.",
+          "Customer data is not made accessible to other customers; logical separation of environments is maintained through suitable isolation mechanisms.",
+          "After the end of the service, customer data is returned or deleted in accordance with the contract and instructions."
+        ]
+      },
+      "availability": {
+        "title": "Availability",
+        "intro": "Availability depends on the agreed service level and deployment model:",
+        "items": [
+          "Essential platform and infrastructure components are monitored.",
+          "Backup and recovery procedures follow the agreed service and deployment, with regular restore testing.",
+          "Operational disruptions are handled through documented escalation and restart procedures."
+        ]
+      },
+      "changes": {
+        "title": "Changes to these terms",
+        "body": "PioVation may further develop these terms and the underlying measures, provided that the agreed level of protection is not reduced. Material changes that significantly affect the agreed services are handled in accordance with the contractual provisions. The current version is published on this page."
+      },
+      "liability": {
+        "title": "Liability",
+        "body": "Liability follows the statutory provisions insofar as nothing to the contrary is individually agreed. PioVation is liable without limitation for intent and gross negligence; beyond that, liability follows the agreed contract."
+      },
+      "final": {
+        "title": "Final provisions",
+        "intro": "Provider details:",
+        "items": [
+          "PioVation GmbH, Zehentmeierstraße 8a, 85630 Grasbrunn, Germany.",
+          "Registered at Amtsgericht München HRB 290989, VAT ID DE367131891.",
+          "Represented by its Managing Director Mazda Sabony.",
+          "Contact: datenschutz@piovation.com."
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Contact",
+    "description": "Tell us about your deployment, your data-sovereignty requirements, or anything else. We typically reply within one business day.",
+    "getInTouch": "Get in touch",
+    "getInTouchBody": "Reach out via any channel below. We typically reply within one business day.",
+    "form": {
+      "heading": "Send a message",
+      "body": "Fill out the form and we will get back to you promptly.",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Ada Lovelace",
+      "company": "Company",
+      "companyPlaceholder": "Acme Corp",
+      "email": "Email Address",
+      "emailPlaceholder": "you@company.com",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+49 89 12345678",
+      "message": "Message",
+      "messagePlaceholder": "Type your message here",
+      "submit": "Submit",
+      "success": "Thank you. Your message has been received and we will get back to you shortly.",
+      "callingCode": "Code",
+      "error": "Something went wrong while sending your message. Please try again or email us directly.",
+      "submitting": "Sending..."
+    },
+    "channels": {
+      "sales": {
+        "label": "sales@piovation.com",
+        "href": "mailto:sales@piovation.com"
+      },
+      "privacy": {
+        "label": "datenschutz@piovation.com",
+        "href": "mailto:datenschutz@piovation.com"
+      },
+      "address": {
+        "label": "Zehentmeierstraße 8a, 85630 Grasbrunn",
+        "href": "https://maps.google.com/?q=Zehentmeierstra%C3%9Fe+8a,+85630+Grasbrunn"
+      }
+    }
+  },
+  "about": {
+    "subtitle": "About",
+    "title": "The cloud operating system for AI that stays on your infrastructure.",
+    "description": "PioSphere unifies GPU infrastructure, LLM operations, and no-code AI agents into one platform - so enterprises, universities, and public agencies can run agentic AI entirely on their own terms.",
+    "story": {
+      "label": "Our story",
+      "title": "Why we started PioVation",
+      "paragraphs": [
+        "Most AI infrastructure today assumes an organization will hand over its data, its models, and its GPUs to somebody else's cloud. That trade-off doesn't sit well with enterprises, universities, and government agencies that carry real security and compliance obligations - so we built the alternative.",
+        "PioVation was founded in 2024 in Grasbrunn, working alongside AI researchers at Friedrich-Alexander-Universität Erlangen-Nürnberg. The mission the team set out with is a simple one: to make artificial intelligence accessible to everyone.",
+        "That mission became PioSphere - a cloud operating system built so any organization can stand up, manage, and audit its own AI agents, whether that means training a model on-premises, rolling out a no-code agent for a public agency, or offering agentic AI as a service to a cloud provider's own customers."
+      ]
+    },
+    "facts": {
+      "label": "Company facts",
+      "rows": [
+        {
+          "label": "Founded",
+          "value": "2024"
+        },
+        {
+          "label": "Headquarters",
+          "value": "Grasbrunn, Bavaria, Germany"
+        },
+        {
+          "label": "Legal entity",
+          "value": "PioVation GmbH"
+        },
+        {
+          "label": "Founder & CEO",
+          "value": "Mazda Sabony"
+        }
+      ]
+    },
+    "build": {
+      "label": "What we build",
+      "title": "One platform, every layer",
+      "description": "PioSphere is a full stack - from the GPUs sitting in your data center to the agents your teams use every day. Every layer can run on-premises, in the cloud, or split across both at once.",
+      "layers": [
+        {
+          "mark": "01",
+          "title": "AgentStudio & applications",
+          "body": "A no-code, drag-and-drop interface for designing, deploying, and iterating on AI agents - built for people who have never opened PyTorch or TensorFlow, and don't need to."
+        },
+        {
+          "mark": "02",
+          "title": "PioSphere ACP - Agentic Cloud Platform",
+          "body": "LLM operations, agents, and retrieval, delivered as managed services: LLM Ops-as-a-Service, Agent-as-a-Service, and RAG-as-a-Service, each ready to plug into existing systems."
+        },
+        {
+          "mark": "03",
+          "title": "PioSphere COS - Cloud Operating System",
+          "body": "Orchestration, access management, and the agent lifecycle - multi-tenant by design and equally at home in a lab, an on-premises data center, or a full regional deployment."
+        },
+        {
+          "mark": "04",
+          "title": "Your infrastructure",
+          "body": "Any GPU, any vendor. Validated on AMD Instinct systems built by Supermicro and AMAX, so adopting PioSphere never means committing to one chipmaker or one cloud."
+        }
+      ]
+    },
+    "principles": {
+      "label": "Our principles",
+      "title": "What we build it on",
+      "items": [
+        {
+          "title": "Sovereignty",
+          "body": "PioSphere runs only in BSI-certified data centers in Germany, fully compliant with GDPR, with no dependency on US or Chinese cloud providers. For a public agency, that isn't a footnote - it's the whole point of calling us instead of someone else."
+        },
+        {
+          "title": "Openness",
+          "body": "The platform is built to run on any GPU vendor's hardware, and has been validated on AMD Instinct systems from both Supermicro and AMAX. Choosing PioSphere never means locking in one chip or one rack."
+        },
+        {
+          "title": "Accessibility",
+          "body": "AgentStudio turns agent-building into a drag-and-drop task, so the person closest to the problem can build the agent, instead of waiting in a queue behind an engineering team."
+        },
+        {
+          "title": "Control",
+          "body": "Every agent is observable by default - token usage, behavior, and performance are logged and auditable, with role-based access control and policy enforcement built in from the start."
+        }
+      ]
+    },
+    "partners": {
+      "label": "Partners",
+      "title": "Built alongside",
+      "description": "PioSphere is co-developed and validated with hardware and research partners, not built in isolation.",
+      "items": [
+        {
+          "name": "AMAX",
+          "role": "GPU infrastructure"
+        },
+        {
+          "name": "AMD",
+          "role": "Instinct GPU platforms"
+        },
+        {
+          "name": "Supermicro",
+          "role": "Rack-level systems"
+        }
+      ]
+    }
+  },
+  "architecture": {
+    "subtitle": "Architecture",
+    "title": "How this documentation experience is built.",
+    "description": "The API reference on /docs is embedded directly into the PioSphere frontend - no separate docs site, no iframe. This page walks through the layers, the data flow, and the tools behind it.",
+    "layers": {
+      "label": "Layers",
+      "title": "One app, four layers",
+      "description": "Each layer has a single job and talks only to its neighbors.",
+      "items": [
+        {
+          "mark": "01",
+          "title": "PioAgent service",
+          "body": "The FastAPI backend defines the customer-facing API. Its OpenAPI schema is generated from the code itself, so the spec can never drift from the implementation."
+        },
+        {
+          "mark": "02",
+          "title": "GitHub Actions sync",
+          "body": "A workflow exports the OpenAPI document from the service and commits it into this repository as docs/openapi.json. The spec travels through git like any other artifact - reviewable, versioned, revertible."
+        },
+        {
+          "mark": "03",
+          "title": "Vite + React bundle",
+          "body": "The spec is imported at build time as a JSON module. No runtime fetch, no CORS, no flash of empty reference - the documentation ships inside the same bundle as the rest of the site."
+        },
+        {
+          "mark": "04",
+          "title": "Scalar reference",
+          "body": "@scalar/api-reference-react renders the interactive reference: searchable sidebar, try-it requests, schema expansion. It is themed to follow the site's light/dark switch and offset to clear the fixed header."
+        }
+      ]
+    },
+    "flow": {
+      "label": "Data flow",
+      "title": "From code to page",
+      "description": "Five steps, fully automated after a change lands in the service repository.",
+      "steps": [
+        {
+          "title": "Route defined",
+          "body": "An endpoint is added or changed in the PioAgent service."
+        },
+        {
+          "title": "Spec generated",
+          "body": "FastAPI emits the updated OpenAPI document."
+        },
+        {
+          "title": "Action syncs",
+          "body": "GitHub Actions commits docs/openapi.json into the frontend repo."
+        },
+        {
+          "title": "Bundle rebuilt",
+          "body": "Vite inlines the new spec into the next build of the site."
+        },
+        {
+          "title": "Docs live",
+          "body": "The /docs reference reflects the change - same header, footer, and theme as every other page."
+        }
+      ]
+    },
+    "tools": {
+      "label": "Tools",
+      "title": "What it is built with",
+      "description": "Everything below runs in the frontend repository you are looking at.",
+      "items": [
+        {
+          "name": "React 19",
+          "role": "UI runtime",
+          "body": "The component model for the whole site, including the docs route."
+        },
+        {
+          "name": "Vite",
+          "role": "Bundler / dev server",
+          "body": "Builds the app, resolves the OpenAPI JSON import, and serves everything on one origin."
+        },
+        {
+          "name": "TanStack Router",
+          "role": "Routing",
+          "body": "File-based routes; /docs and /architecture are ordinary routes in src/routes/."
+        },
+        {
+          "name": "Scalar",
+          "role": "API reference",
+          "body": "@scalar/api-reference-react renders the OpenAPI document as an interactive reference inside the React tree."
+        },
+        {
+          "name": "Tailwind CSS v4",
+          "role": "Styling",
+          "body": "Token-driven styling shared between the site chrome and the reference page."
+        },
+        {
+          "name": "react-i18next",
+          "role": "i18n",
+          "body": "English and German locales for every surface, including this page."
+        },
+        {
+          "name": "Framer Motion",
+          "role": "Animation",
+          "body": "Scroll-triggered reveals on this page, consistent with the about page."
+        },
+        {
+          "name": "FastAPI",
+          "role": "Spec source",
+          "body": "The PioAgent backend whose generated OpenAPI schema feeds the reference."
+        },
+        {
+          "name": "GitHub Actions",
+          "role": "Spec sync",
+          "body": "Automates the path from service code to docs/openapi.json in this repo."
+        }
+      ]
+    }
+  }
+}

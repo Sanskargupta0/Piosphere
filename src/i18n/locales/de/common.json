@@ -1,0 +1,100 @@
+{
+  "_meta": {
+    "reviewStatus": "ai-draft-unreviewed"
+  },
+  "config": {
+    "title": "Designeinstellungen",
+    "description": "Passen Sie Darstellung und Layout an Ihre Vorlieben an.",
+    "reset": "Zurücksetzen",
+    "openSettings": "Designeinstellungen öffnen",
+    "theme": {
+      "title": "Design",
+      "system": "System",
+      "light": "Hell",
+      "dark": "Dunkel"
+    },
+    "sidebar": {
+      "title": "Seitenleiste",
+      "inset": "Eingerückt",
+      "floating": "Schwebend",
+      "sidebar": "Seitenleiste"
+    },
+    "layout": {
+      "title": "Layout",
+      "default": "Standard",
+      "compact": "Kompakt",
+      "full": "Vollständiges Layout"
+    },
+    "direction": {
+      "title": "Richtung",
+      "ltr": "Links nach rechts",
+      "rtl": "Rechts nach links"
+    },
+    "language": {
+      "title": "Sprache",
+      "english": "English",
+      "german": "Deutsch"
+    }
+  },
+  "comingSoon": {
+    "title": "Demnächst verfügbar!",
+    "description": "Diese Seite wurde noch nicht erstellt. Bleiben Sie dran!"
+  },
+  "confirmDialog": {
+    "cancel": "Abbrechen",
+    "continue": "Weiter"
+  },
+  "confirmDelete": {
+    "typeToConfirm": "Geben Sie {{name}} ein, um zu bestätigen",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "deleting": "Wird gelöscht ..."
+  },
+  "signOut": {
+    "title": "Abmelden",
+    "description": "Möchten Sie sich wirklich abmelden? Sie müssen sich erneut anmelden, um auf Ihr Konto zuzugreifen.",
+    "confirm": "Abmelden"
+  },
+  "themeSwitch": {
+    "toggle": "Design umschalten",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "search": {
+    "placeholder": "Suchen"
+  },
+  "profile": {
+    "account": "Konto",
+    "settings": "Einstellungen",
+    "signOut": "Abmelden"
+  },
+  "navUser": {
+    "account": "Konto",
+    "notifications": "Benachrichtigungen",
+    "signOut": "Abmelden"
+  },
+  "commandMenu": {
+    "placeholder": "Befehl eingeben oder suchen ...",
+    "noResults": "Keine Ergebnisse gefunden.",
+    "theme": "Design",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "dataTable": {
+    "view": "Ansicht",
+    "toggleColumns": "Spalten ein-/ausblenden",
+    "rowsPerPage": "Zeilen pro Seite",
+    "pageOf": "Seite {{page}} von {{totalPages}}",
+    "goToFirstPage": "Zur ersten Seite",
+    "goToPreviousPage": "Zur vorherigen Seite",
+    "goToNextPage": "Zur nächsten Seite",
+    "goToLastPage": "Zur letzten Seite",
+    "goToPage": "Zur Seite {{page}}"
+  },
+  "docs": {
+    "title": "API-Dokumentation",
+    "toggleSidebar": "Seitenleiste ein-/ausblenden"
+  }
+}

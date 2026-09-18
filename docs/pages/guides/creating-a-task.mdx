@@ -1,0 +1,50 @@
+---
+title: Creating a task
+---
+
+# Creating a task
+
+This guide walks through creating tasks with the PioAgent API.
+
+> **Note:** In this version of the demo, the Tasks API is read-only —
+> `GET /api/v1/tasks` is the customer-facing endpoint. This guide shows how
+> to work with the task list your agents produce.
+
+## List all tasks
+
+Fetch every task in your workspace:
+
+```bash
+curl https://api.pioagent.app/api/v1/tasks \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
+
+Each task looks like this:
+
+```json
+{
+  "id": "task_001",
+  "title": "Summarize weekly report",
+  "status": "completed",
+  "assignee_id": "usr_001"
+}
+```
+
+## Filter by status
+
+Pass a `status` query parameter to narrow the list:
+
+```bash
+curl "https://api.pioagent.app/api/v1/tasks?status=pending" \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
+
+## Task statuses
+
+| Status    | Meaning                                    |
+| --------- | ------------------------------------------ |
+| pending   | The task is queued but not started         |
+| in_progress | An agent is currently working on the task |
+| completed | The task finished successfully            |
+
+See the full [Tasks API reference](/docs/api/tasks) for details.

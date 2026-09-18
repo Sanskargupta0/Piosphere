@@ -1,0 +1,40 @@
+---
+title: Authentication
+---
+
+# Authentication
+
+All PioAgent API requests are authenticated with an API key.
+
+## API keys
+
+API keys are managed in the PioAgent dashboard under **Settings → API Keys**.
+Keys carry the permissions of the user who created them, so create a
+dedicated key for each integration.
+
+Keep your API keys secret. A leaked key should be revoked immediately from
+the dashboard.
+
+## Sending the key
+
+Send your key in the `Authorization` header as a bearer token:
+
+```bash
+curl https://api.pioagent.app/api/v1/users \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
+
+## Errors
+
+| Status | Meaning                                        |
+| ------ | ---------------------------------------------- |
+| 401    | Missing or invalid API key                     |
+| 403    | Key is valid but lacks permission for the call |
+
+A `401` response looks like this:
+
+```json
+{
+  "detail": "Invalid or missing API key"
+}
+```
