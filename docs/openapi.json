@@ -31,7 +31,7 @@
         "tags": [
           "Users"
         ],
-        "summary": "Get all users",
+        "summary": "Get all active users",
         "description": "Get all users. Returns every user account in the calling workspace, including inactive users. Requires a valid API key.",
         "operationId": "listUsers",
         "responses": {
